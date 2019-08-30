@@ -8,14 +8,14 @@ required:
  - deploy
  - sample-repo
 
-# Github repos
-sample-repo:
-  service_id: githubpublic
-  parameters:
-    repo_name: "{{name}}"
-    repo_url: https://github.com/surasiterix/bluemix-php-sample
-    type: existing
-    has_issues: false
+ # Github repos
+  sample-repo:
+    service_id: githubpublic
+    parameters:
+      repo_name: "{{name}}"
+      repo_url: https://github.com/{Nombre de usuario}/bluemix-php-sample
+      type: existing
+      has_issues: false
 
 # Pipelines
 sample-build:
